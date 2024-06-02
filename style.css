@@ -1,0 +1,98 @@
+body, html {
+    background-image: url('fotos/bos-achtergrond.jpeg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 75vh; 
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+/* voor progress */
+.progress-bars {
+    display: flex;
+    flex-direction: column; /* boven elkaar */
+    align-items: center;
+    margin-right: 100px; 
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: flex-end; 
+    margin-bottom: 10px; 
+}
+
+progress {
+    writing-mode: vertical-rl; /* om verticaal te krijgen */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 200px;
+    transform: rotate(180deg); /* van boven naar beneden */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0e0e0; 
+}
+
+progress::-webkit-progress-value {
+    background-color: black; 
+}
+
+#main-image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* voor de buttons */
+.buttons {
+    display: flex;
+    justify-content: center; 
+}
+
+button {
+    padding: 10px 20px;
+    border: black;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s; 
+    margin-right: 10px;
+    border: black;
+    border-color: black;
+}
+
+button:hover {
+    background-color: gray;
+    border: black; 
+}
+
+/* namen */
+.progress-label {
+    font-family: 'poppins', sans-serif; 
+    margin-bottom: 5px; 
+    font-size: 20px; 
+    text-align: center; 
+    color: white; 
+    background-color: black; 
+    border-radius: 10px; 
+    margin: 5px; 
+    padding: 5px; 
+}
